@@ -15,10 +15,10 @@ function App() {
   };
 
   return (
-    // Have the SignUpForm disappear if the token is accepted when the "Authenticate" button is clicked
+    // Have the SignUpForm disappear if the token is accepted when the "Authenticate" button is clicked, Authenticate will appear when "Submit" is clicked
     <div className='app-cont'>
       {!isAuthenticated && <SignUpForm setToken={handleAuthSuccess} />}
-      <Authenticate token={token} />
+      {isAuthenticated && <Authenticate token={token} />}
     </div>
   );
 }
