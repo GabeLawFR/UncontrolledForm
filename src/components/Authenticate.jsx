@@ -26,12 +26,14 @@ export default function Authenticate({token}) {
     }
 
     return (
-        <div>
-            <h2>Authenticate!!!</h2>
-            {successMessage && <p>{successMessage}</p>}
-            {error && <p>{error}</p>}
-            {username && <p>Logged in as: {username}</p>}
-            <button onClick={handleClick}>
+        // Added a conditional rendering of "Logged in as:" when log in is successful
+        <div className='auth-cont'>
+            <h2 className='auth-title'>Authenticate!</h2>
+            <p>Then once that is done, click the "Authenticate" button:</p>
+            {successMessage && <p className='success-p'>{successMessage}</p>}
+            {error && <p className='error-p'>{error}</p>}
+            {username && <p className='ze-p'>Logged in as: {username}</p>}
+            <button className='buttons' onClick={handleClick}>
             Authenticate Token
             </button>
         </div>

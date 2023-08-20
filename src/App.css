@@ -1,42 +1,87 @@
 #root {
   max-width: 1280px;
-  margin: 0 auto;
+  margin: -100px auto 0;
   padding: 2rem;
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.app-cont {
+  display: grid;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.signup-cont {
+  padding: 20px;
+  background: rgb(31, 89, 81);
+  border-radius: 15px;
+  margin-bottom: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.auth-cont {
+  background: rgb(10, 82, 145);
+  padding: 20px;
+  border-radius: 15px;
 }
 
-.card {
-  padding: 2em;
+.signup-title,
+.auth-title {
+  margin-bottom: 15px;
+  font-size: 35px;
+  color: darkgoldenrod;
+  text-decoration: underline;
+  text-shadow: 1px 1px 1px black;
 }
 
-.read-the-docs {
-  color: #888;
+.labels {
+  padding: 10px;
+  color: rgb(215, 180, 244);
+  font-size: 25px;
+  background-color: dimgray;
+  border-radius: 10px;
+  box-shadow: 1px 1px 1px black;
+  text-shadow: 1px 1px 1px black;
+}
+
+.inputs {
+  width: 60%;
+  padding: 3px;
+}
+
+.ze-form {
+  display: grid;
+}
+
+.buttons {
+  color: rgb(112, 185, 248);
+  border-radius: 10px;
+  padding: 5px 10px 5px;
+  width: 80%;
+  font-size: large;
+  margin: 0 auto;
+}
+
+.ze-p {
+  background-color: rgb(169, 22, 161);
+  border-radius: 10px;
+  padding: 2px;
+  font-size: 15px;
+}
+
+.signup-hint {
+  color: rgb(241, 96, 96);
+  font-size: 15px;
+  text-shadow: 1px 1px 1px rgb(0, 0, 0);
+}
+
+.success-p {
+  background-color: rgb(17, 85, 66);
+  border-radius: 10px;
+  padding: 2px;
+  font-size: 15px;
+}
+
+.error-p {
+  background-color: rgb(119, 12, 12);
+  border-radius: 10px;
+  padding: 2px;
+  font-size: 15px;
 }
